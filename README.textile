@@ -6,6 +6,11 @@ Currently it is so simple that it only knows how to do "SELECT COUNT(*) FROM ...
 If no new rows are inserted in the entire database within some frequency (defined in config.yml),
 a notification email will be sent out.
 
+h1. Prequisite:
+
+* Active Record
+* Action Mailer
+
 h1. How to configure:
   
 Create database.yml, mail.yml, confg.yml in the config directory.
