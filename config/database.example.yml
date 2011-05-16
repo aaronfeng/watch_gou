@@ -1,0 +1,20 @@
+production:
+  host:     localhost
+  adapter:  mysql
+  database: your_db
+  username: root
+  password: changeme
+
+development:
+  host:     localhost
+  adapter:  mysql
+  database: your_db
+  username: root
+  password: changeme
+
+test:
+  host:     localhost
+  adapter:  mysql
+  database: your_db
+  username: root
+  password: changeme

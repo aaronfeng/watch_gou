@@ -1,0 +1,25 @@
+看狗
+
+h1. What is this:
+
+Watch gou is a very simple program that will monitor your DB for you.
+Currently it is so simple that it only knows how to do "SELECT COUNT(*) FROM ...".
+If no new rows are inserted in the entire database within some frequency (defined in config.yml),
+a notification email will be sent out.
+
+h1. How to configure:
+  
+Create database.yml, mail.yml, confg.yml in the config directory.
+Look at config/*.example.config as a starting point.
+
+h1. How to run:
+
+pre. ruby watch_gou.rb 
+
+I usually run the program within a gnu screen window.
+
+h1. How to set environment:
+
+pre. WATCH_GOU_MODE=test ruby watch_gou.rb 
+
+by default the mode is "development"

@@ -1,0 +1,13 @@
+# frequency is in minutes
+
+production:
+  frequency: 5
+  max_tries: 5
+
+development:
+  frequency: 5
+  max_tries: 5
+
+test:
+  frequency: 5
+  max_tries: 5
