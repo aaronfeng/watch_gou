@@ -16,6 +16,8 @@ h1. How to configure:
 Create database.yml, mail.yml, confg.yml in the config directory.
 Look at config/*.example.config as a starting point.
 
+pre. bundle install
+
 h1. How to run:
 
 pre. ruby watch_gou.rb 
