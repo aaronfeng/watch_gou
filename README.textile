@@ -1,6 +1,5 @@
-看狗
 
-h1. What is this:
+h1. What is 看狗:
 
 Watch gou is a very simple program that will monitor your DB for you.
 Currently it is so simple that it only knows how to do "SELECT COUNT(*) FROM ...".
