@@ -90,6 +90,11 @@ class WatchGou
     
     retries = 0
     while true
+      if retries == @max_tries
+        puts "Max tries reached, exiting..."
+        exit
+      end
+
       sleep(@frequency * 60) 
     
       db_active = false
