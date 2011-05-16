@@ -111,15 +111,12 @@ class WatchGou
     
       if not db_active
         if retries < @max_tries
-          puts "DB doesn't appear to be active... sending notification..."
+          puts "#{Time.now} DB doesn't appear to be active... sending notification..."
           @email.deliver
           retries += 1
-        else
-          puts "Max tries reached, exiting..."
-          exit
         end
       else
-        puts "Looks like there's some activities going on in your DB..."
+        puts "#{Time.now} Looks like there's some activities going on in your DB..."
       end
     end
   end
